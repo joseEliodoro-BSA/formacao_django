@@ -17,3 +17,11 @@ Cada branch de curso pode seguir uma estrutura parecida com esta:
 - `README.md` — explicação do curso, objetivo, links relevantes e resumo.
 - `exercicios/` — exercícios resolvidos e não resolvidos.
 - `requirements.txt` — dependências específicas do curso/projeto.
+
+# Comandos do Django:
+* `django-admin help` — lista todos os comandos disponíveis.
+* `django-admin startproject {nome do projeto} .`: cria um novo projeto em django.
+* `python manage.py runserver`: sobe o servidor com o reload.
+* `python manage.py startapp {name app}`: cria uma aplicação para o projeto. a qual deve ser endereçada no setup para que o django interperte
+* `python manage.py help`: mostra os comando referêntes a aplicação.
+* `python manage.py collectstatic`: adiciona arquivos statics a pasta padrão.
