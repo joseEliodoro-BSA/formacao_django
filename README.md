@@ -25,3 +25,6 @@ Cada branch de curso pode seguir uma estrutura parecida com esta:
 * `python manage.py startapp {name app}`: cria uma aplicação para o projeto. a qual deve ser endereçada no setup para que o django interperte
 * `python manage.py help`: mostra os comando referêntes a aplicação.
 * `python manage.py collectstatic`: adiciona arquivos statics a pasta padrão.
+* `python manage.py makemigrations`: cria migrações no projeto. 
+* `python manage.py migrate`: aplica a migração criado no banco de dados.
+* `python manage.py createsuperuser`: cria um super usuário para o sistema de autenticação do django.
