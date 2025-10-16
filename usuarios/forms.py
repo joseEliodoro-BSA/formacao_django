@@ -24,7 +24,7 @@ class LoginForm(forms.Form):
             }
         ),
     )
-    t = forms.TextInput()
+
 
 ## Formulário de cadastro
 class CadastroForm(forms.Form):
