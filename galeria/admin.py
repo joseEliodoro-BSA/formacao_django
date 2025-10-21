@@ -5,7 +5,7 @@ from galeria.models import Fotografia
 class ListandoFotografia(admin.ModelAdmin):
     list_display = ("id", "nome", "legenda", "publicada")
     list_display_links = ("id", "nome")
-    list_filter = ("categoria",)
+    list_filter = ("categoria", "usuario")
     list_per_page = 10
     list_editable = ("publicada",)
 
