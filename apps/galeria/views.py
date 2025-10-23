@@ -30,3 +30,12 @@ def buscar(request):
             fotografia = fotografia.filter(nome__icontains=nome_buscar)
 
     return render(request, "galeria/buscar.html", {"cards": fotografia})
+
+def nova_imagem(request):
+    return render(request, "galeria/nova_imagem.html")
+
+def editar_imagem(request):
+    return render(request, "galeria/editar_imagem.html")
+
+def deletar_imagem(request):
+    return render(request, "galeria/deletar_imagem.html")
