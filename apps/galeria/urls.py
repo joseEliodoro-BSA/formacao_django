@@ -1,6 +1,6 @@
 from django.urls import path
 from apps.galeria.views import \
-    index, imagem, buscar, nova_imagem, editar_imagem, deletar_imagem
+    index, imagem, buscar, nova_imagem, editar_imagem, deletar_imagem, filtro
 
 # from django.http import JsonResponse
 
@@ -30,6 +30,7 @@ urlpatterns = [
     path("nova-imagem", nova_imagem, name="nova-imagem"),
     path("editar-imagem/<int:foto_id>", editar_imagem, name="editar-imagem"),
     path("deletar-imagem/<int:foto_id>", deletar_imagem, name="deletar-imagem"),
+    path("filtro/<str:categoria>", filtro, name="filtro"),
 
     # path("path_params/<int:id>", path_params),
     # path("query_params", query_params),
