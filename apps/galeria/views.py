@@ -70,5 +70,8 @@ def editar_imagem(request, foto_id: int):
     return render(request, "galeria/editar_imagem.html", {"form": form, "foto_id": foto_id})
 
 
-def deletar_imagem(request):
-    return render(request, "galeria/deletar_imagem.html")
+def deletar_imagem(request, foto_id: int):
+    fotografia = Fotografia.objects.get(id=foto_id)
+    fotografia.delete()
+    messages.success(request, "Imagem deletada com sucesso!")
+    return redirect("index")
